@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volunteer with Hope Harvest or enquire about our services, food parcels and workshops in Johannesburg.">
+    <title>Volunteer / Enquire | Hope Harvest Community Kitchen</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Hope Harvest</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Volunteer / Enquire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Volunteer or Make an Enquiry</h1>
+            <p>Whether you want to give your time or need support, we would love to hear from you.</p>
+        </section>
+
+        <!-- Volunteer Info -->
+        <section class="volunteer-info">
+            <h2>Volunteer With Us</h2>
+            <p>Our volunteers are the heart of Hope Harvest. You can help with:</p>
+            <ul>
+                <li>Preparing and serving meals</li>
+                <li>Packing food parcels</li>
+                <li>Assisting at workshops</li>
+                <li>Administrative and outreach support</li>
+                <li>Special events and fundraising</li>
+            </ul>
+            <p>No previous experience is required — just a willing heart and a few hours a week or month. Training and orientation are provided.</p>
+        </section>
+
+        <!-- Enquiry Form (basic HTML form – client-side validation will be added in Part 3) -->
+        <section class="enquiry-form">
+            <h2>Enquiry / Volunteer Form</h2>
+            <p>Please complete the form below. Fields marked with * are required.</p>
+
+            <form action="#" method="post" id="enquiryForm">
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g. Thandi Mokoena">
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567">
+
+                    <label for="suburb">Suburb / Area</label>
+                    <input type="text" id="suburb" name="suburb" placeholder="e.g. Brixton, Johannesburg">
+                </fieldset>
+
+                <!-- Type of Enquiry -->
+                <fieldset>
+                    <legend>How can we help you? *</legend>
+
+                    <label>
+                        <input type="radio" name="enquiryType" value="volunteer" required>
+                        I want to volunteer
+                    </label>
+                    <label>
+                        <input type="radio" name="enquiryType" value="food-support">
+                        I need food support / a parcel
+                    </label>
+                    <label>
+                        <input type="radio" name="enquiryType" value="workshop">
+                        I am interested in a workshop
+                    </label>
+                    <label>
+                        <input type="radio" name="enquiryType" value="sponsor">
+                        I want to sponsor or donate
+                    </label>
+                    <label>
+                        <input type="radio" name="enquiryType" value="other">
+                        Other enquiry
+                    </label>
+                </fieldset>
+
+                <!-- Message -->
+                <label for="message">Message / Additional Information *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us a bit more about your request or how you would like to help..."></textarea>
+
+                <!-- Preference -->
+                <label for="preferredContact">Preferred contact method</label>
+                <select id="preferredContact" name="preferredContact">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone call</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
+
+                <button type="submit" class="btn primary">Send Enquiry</button>
+            </form>
+
+            <p class="form-note">This is a static form for Part 1. Full client-side validation and form handling will be added in Part 3.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Hope Harvest Community Kitchen. All rights reserved.</p>
+            <p>A registered non-profit organisation serving Johannesburg.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="services.html">Services</a> |
+                <a href="enquiry.html">Volunteer</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
