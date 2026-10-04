@@ -30,7 +30,13 @@
 - Added organisation content (history, mission, services, contact)  
 - Created basic enquiry form  
 - Added placeholder CSS using planned colour palette  
-- Wrote initial README  
+- Wrote initial README
+
+- **Screenshot evidence**
+- <img width="1211" height="744" alt="Screenshot 2026-10-04 140207" src="https://github.com/user-attachments/assets/b9a644c3-8cf9-43d3-804c-fd867fbb3b01" />
+<img width="1099" height="751" alt="Screenshot 2026-10-04 140240" src="https://github.com/user-attachments/assets/ad1bc875-32eb-447d-841c-ed36d770ab15" />
+
+
 
 ## References
 
