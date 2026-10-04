@@ -60,10 +60,3 @@ Unsplash. [s.a.]. *Free high-resolution photos*. [Online]. Available at: https:/
 
 
 
-
-
-
-
-
-<img width="1259" height="748" alt="Screenshot 2026-10-04 135424" src="https://github.com/user-attachments/assets/7d23a20b-eec6-490a-98f2-ad019848cf92" />
-<img width="1207" height="777" alt="Screenshot 2026-10-04 140052" src="https://github.com/user-attachments/assets/0262d89f-ef6f-4789-95af-a2f839e23e15" />
