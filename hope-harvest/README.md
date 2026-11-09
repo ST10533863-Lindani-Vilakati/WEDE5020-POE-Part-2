@@ -58,68 +58,33 @@ The project is completed as a Portfolio of Evidence (PoE) in three parts:
 - Relative units (`rem`, `%`, `clamp()`) for scalable typography and spacing  
 - Mobile-first refinements and tablet/desktop enhancements  
 
----
-
-## Colour Scheme (from Project Proposal)
-
-| Role            | Hex       | Usage                          |
-|-----------------|-----------|--------------------------------|
-| Primary Green   | `#2C5F2D` | Header, headings, trust        |
-| Primary Dark    | `#1e4220` | Footer, gradients              |
-| Accent Terracotta | `#C45C26` | Buttons, active links, highlights |
-| Cream           | `#F8F1E9` | Page background, cards         |
-| White           | `#ffffff` | Content cards                  |
-| Text            | `#2d2d2d` | Body text                      |
-
----
-
-## Sitemap
-
-```
-Home (index.html)
-├── About Us (about.html)
-├── Services (services.html)
-│   ├── Daily Meals
-│   ├── Food Parcels
-│   └── Skills Workshops
-├── Volunteer / Enquire (enquiry.html)
-└── Contact (contact.html)
-    ├── Brixton Hub
-    ├── Yeoville Centre
-    └── Alexandra Outreach Point
-```
-
----
-
-## File and Folder Structure
-
-```
-hope-harvest/
-├── index.html
-├── about.html
-├── services.html
-├── enquiry.html
-├── contact.html
-├── css/
-│   └── styles.css      ← Full Part 2 stylesheet
-├── images/             (placeholder – add images + update README)
-├── js/                 (placeholder – JavaScript in Part 3)
-└── README.md
-```
-
----
-
-## Timeline and Milestones
-
-| Phase   | Focus                              | Status      |
-|---------|------------------------------------|-------------|
-| Part 1  | Planning, content, HTML structure  | Completed   |
-| Part 2  | CSS, responsive design, UX         | Completed   |
-| Part 3  | JavaScript, forms, SEO, embeds     | Upcoming    |
-
----
-
 ## Changelog
+
+### 2026-11-08 – Part 3: Functionality, Forms, SEO & Deployment
+
+**JavaScript Functionality (Vanilla JS only)**
+- Implemented accordion interactive elements on the Services page
+- Added live search and category filter (All / Meals / Parcels / Workshops)
+- Built full client-side form validation for both Enquiry and Contact forms
+- Custom error messages and success feedback after valid submission
+- Interactive Leaflet map with three community hub markers and popups
+- Smooth scrolling for internal links
+
+**Forms**
+- Enhanced enquiry form with stronger validation (name, email, phone, message length)
+- Added complete contact form on contact.html with subject selection
+- Both forms use pure vanilla JavaScript (no jQuery or external libraries for validation)
+
+**SEO**
+- Added robots.txt
+- Created sitemap.xml
+- Improved meta descriptions and keywords on all pages
+- Clean semantic HTML structure maintained
+
+**Other**
+- All JavaScript is vanilla
+- Leaflet used for the interactive map (via CDN)
+- Ready for deployment on GitHub Pages or Netlify
 
 ### 2026-10-04 – Part 2: CSS Styling & Responsive Design
 - Created comprehensive external stylesheet (`css/styles.css`)
@@ -146,30 +111,11 @@ hope-harvest/
 - Added placeholder CSS using planned colour palette  
 - Wrote initial README  
 
----
-
-## Responsive Design Notes
-
-**Breakpoints used**
-- **Mobile** (< 640px): Single-column layout, stacked navigation, full-width buttons, 2-column stats
-- **Tablet** (≥ 640px): Two-column mission/vision, larger headings
-- **Desktop** (≥ 900px): Four-column stats, three-column cards, refined spacing
-- **Large desktop** (≥ 1200px): Full max-width content area
-
-**Relative units**
-- Font sizes and spacing primarily use `rem` and `clamp()` for fluid scaling
-- Widths and gaps use `%` and `fr` units inside Grid/Flex containers
-
 **Testing recommendation**
 Use browser developer tools (Chrome DevTools / Firefox Responsive Design Mode) to verify:
 - 320px – 480px (mobile phones)
 - 768px (tablets)
 - 1024px+ (desktops)
-
-**Screenshot evidence**  
-*(Add screenshots of desktop, tablet and mobile views here or in a `/screenshots` folder and link them for submission.)*
-
----
 
 ## References
 
@@ -196,17 +142,6 @@ Unsplash. [s.a.]. *Free high-resolution photos*. [Online]. Available at: https:/
 - Where no date is available, `[s.a.]` (sine anno) is used.  
 - Online sources include `[Online]`, the full URL, and the accessed date.  
 - Additional references for Part 3 (JavaScript, SEO, maps) will be added later.
-
----
-
-## How to View the Site Locally
-
-1. Clone or download this repository.  
-2. Open `index.html` in any modern browser (Chrome, Firefox, Edge, Safari).  
-3. Resize the browser window or use DevTools device mode to test responsiveness.  
-4. All internal links and the external stylesheet work without a local server.
-
----
 
 ## Submission Notes (Part 2)
 
