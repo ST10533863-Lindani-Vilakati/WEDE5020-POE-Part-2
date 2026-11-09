@@ -1,13 +1,13 @@
-# Hope Harvest Community Kitchen – Website Project
+Hope Harvest Community Kitchen – Website Project
 
 **Student Information**  
 - Full Name: Lindani Vilakati 
 - Student Number: ST10533863  
 - Group : 1
   
-## Changelog
+Changelog
 
-### 2026-10-04 – Part 2: CSS Styling & Responsive Design
+2026-10-04 – Part 2: CSS Styling & Responsive Design
 - Created comprehensive external stylesheet (`css/styles.css`)
 - Implemented CSS custom properties for maintainable design tokens
 - Applied CSS reset for consistent cross-browser rendering
@@ -24,7 +24,7 @@
 - Updated all HTML pages to reference the completed stylesheet
 - Expanded README with Part 2 documentation, colour table and responsive notes
 
-### 2026-09-01 – Part 1 Initial Commit
+2026-09-01 – Part 1 Initial Commit
 - Created project structure  
 - Built five HTML pages with full navigation  
 - Added organisation content (history, mission, services, contact)  
@@ -32,9 +32,36 @@
 - Added placeholder CSS using planned colour palette  
 - Wrote initial README
 
+2026-11-08 – Part 3: Functionality, Forms, SEO & Deployment
+
+**JavaScript Functionality (Vanilla JS only)**
+- Implemented accordion interactive elements on the Services page
+- Added live search and category filter (All / Meals / Parcels / Workshops)
+- Built full client-side form validation for both Enquiry and Contact forms
+- Custom error messages and success feedback after valid submission
+- Interactive Leaflet map with three community hub markers and popups
+- Smooth scrolling for internal links
+
+**Forms**
+- Enhanced enquiry form with stronger validation (name, email, phone, message length)
+- Added complete contact form on contact.html with subject selection
+- Both forms use pure vanilla JavaScript (no jQuery or external libraries for validation)
+
+**SEO**
+- Added robots.txt
+- Created sitemap.xml
+- Improved meta descriptions and keywords on all pages
+- Clean semantic HTML structure maintained
+
+**Other**
+- All JavaScript is vanilla
+- Leaflet used for the interactive map (via CDN)
+- Ready for deployment on GitHub Pages or Netlify
+
 - **Screenshot evidence**
 - <img width="1211" height="744" alt="Screenshot 2026-10-04 140207" src="https://github.com/user-attachments/assets/b9a644c3-8cf9-43d3-804c-fd867fbb3b01" />
 <img width="1099" height="751" alt="Screenshot 2026-10-04 140240" src="https://github.com/user-attachments/assets/ad1bc875-32eb-447d-841c-ed36d770ab15" />
+
 
 
 
@@ -57,5 +84,6 @@ W3C. 2023. *Web Content Accessibility Guidelines (WCAG) 2.2*. [Online]. Availabl
 Mozilla Developer Network. 2024. *CSS Grid Layout* and *Flexbox*. [Online]. Available at: https://developer.mozilla.org/ [Accessed 4 October 2026].
 
 Unsplash. [s.a.]. *Free high-resolution photos*. [Online]. Available at: https://unsplash.com/ [Accessed 1 September 2026].
+
 
 
