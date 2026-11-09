@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Hope Harvest Community Kitchen – locations, phone numbers, email and map of our Johannesburg community hubs.">
+    <meta name="description" content="Contact Hope Harvest Community Kitchen – locations, phone numbers, email and interactive map of our Johannesburg community hubs.">
+    <meta name="keywords" content="contact Hope Harvest, community kitchen Johannesburg, Brixton, Yeoville, Alexandra">
     <title>Contact | Hope Harvest Community Kitchen</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +32,6 @@
             <p>We would love to hear from you. Reach out or visit one of our community hubs.</p>
         </section>
 
-        <!-- Contact Details -->
         <section class="contact-details">
             <h2>Get in Touch</h2>
             <div class="contact-grid">
@@ -48,7 +50,6 @@
             </div>
         </section>
 
-        <!-- Locations (more than one as required) -->
         <section class="locations">
             <h2>Our Community Hubs</h2>
 
@@ -74,25 +75,48 @@
             </article>
         </section>
 
-        <!-- Map Placeholder (Google Maps embed will be added in Part 3) -->
+        <!-- Interactive Map -->
         <section class="map">
             <h2>Find Us on the Map</h2>
-            <p>Interactive map coming in Part 3. For now, you can search the addresses above on Google Maps or use the links below:</p>
-            <ul>
-                <li><a href="https://www.google.com/maps/search/?api=1&query=Brixton+Johannesburg" target="_blank" rel="noopener">Brixton Hub on Google Maps</a></li>
-                <li><a href="https://www.google.com/maps/search/?api=1&query=Yeoville+Johannesburg" target="_blank" rel="noopener">Yeoville Centre on Google Maps</a></li>
-                <li><a href="https://www.google.com/maps/search/?api=1&query=Alexandra+Johannesburg" target="_blank" rel="noopener">Alexandra Point on Google Maps</a></li>
-            </ul>
-            <!-- Placeholder for future embed -->
-            <div class="map-placeholder">
-                <p>[Google Maps embed will appear here in Part 3]</p>
-            </div>
+            <p>Click the markers to see details about each community hub.</p>
+            <div id="map"></div>
         </section>
 
-        <!-- Quick Contact Form (simple) -->
-        <section class="quick-contact">
-            <h2>Send a Quick Message</h2>
-            <p>Prefer a short message? Use the form on our <a href="enquiry.html">Enquiry page</a> or email us directly.</p>
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <p>Have a general question or comment? Fill in the form below.</p>
+
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="contactName">Full Name *</label>
+                    <input type="text" id="contactName" name="contactName" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject *</label>
+                    <select id="contactSubject" name="contactSubject" required>
+                        <option value="">-- Select a subject --</option>
+                        <option value="general">General Enquiry</option>
+                        <option value="volunteer">Volunteering</option>
+                        <option value="donation">Donation / Sponsorship</option>
+                        <option value="media">Media / Press</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Type your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
         </section>
     </main>
 
@@ -109,5 +133,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

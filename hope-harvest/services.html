@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the services offered by Hope Harvest Community Kitchen: daily meals, food parcels and skills workshops in Johannesburg.">
+    <meta name="keywords" content="community kitchen, free meals Johannesburg, food parcels, skills workshops, Hope Harvest">
     <title>Services | Hope Harvest Community Kitchen</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,50 +30,74 @@
             <p>Practical support that meets immediate needs and builds long-term resilience.</p>
         </section>
 
-        <!-- Daily Meals -->
-        <section id="meals" class="service">
-            <h2>Daily Community Meals</h2>
-            <p>Every weekday we serve hot, nutritious meals at our three community hubs. Meals are free of charge and open to anyone in need — no questions asked.</p>
-            <ul>
-                <li>Breakfast and lunch options</li>
-                <li>Vegetarian and cultural dietary considerations where possible</li>
-                <li>Safe, welcoming dining spaces</li>
-                <li>Opportunities for guests to connect with support services</li>
-            </ul>
-            <p><strong>Locations & Times:</strong> See our <a href="contact.html">Contact page</a> for current serving times at each hub.</p>
+        <!-- Search & Filter -->
+        <section>
+            <div class="search-filter">
+                <input type="text" id="serviceSearch" placeholder="Search services...">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="meals">Meals</button>
+                    <button class="filter-btn" data-filter="parcels">Parcels</button>
+                    <button class="filter-btn" data-filter="workshops">Workshops</button>
+                </div>
+            </div>
         </section>
 
-        <!-- Food Parcels -->
-        <section id="parcels" class="service">
-            <h2>Monthly Food Parcels</h2>
-            <p>We pack and distribute monthly food parcels to registered families. Each parcel contains staple foods, fresh vegetables (when available), and basic household essentials.</p>
-            <ul>
-                <li>Registration is simple and confidential</li>
-                <li>Priority given to households with children, the elderly, and people with disabilities</li>
-                <li>Parcels can be collected or, in special cases, delivered</li>
-            </ul>
-            <p>To register a household or enquire about eligibility, please use our <a href="enquiry.html">enquiry form</a>.</p>
+        <!-- Accordion Services -->
+        <section class="accordion">
+            <div class="accordion-item service-item" data-category="meals">
+                <button class="accordion-btn">Daily Community Meals</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Every weekday we serve hot, nutritious meals at our three community hubs. Meals are free of charge and open to anyone in need — no questions asked.</p>
+                        <ul>
+                            <li>Breakfast and lunch options</li>
+                            <li>Vegetarian and cultural dietary considerations where possible</li>
+                            <li>Safe, welcoming dining spaces</li>
+                            <li>Opportunities for guests to connect with support services</li>
+                        </ul>
+                        <p><strong>Locations & Times:</strong> See our <a href="contact.html">Contact page</a> for current serving times at each hub.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item service-item" data-category="parcels">
+                <button class="accordion-btn">Monthly Food Parcels</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>We pack and distribute monthly food parcels to registered families. Each parcel contains staple foods, fresh vegetables (when available), and basic household essentials.</p>
+                        <ul>
+                            <li>Registration is simple and confidential</li>
+                            <li>Priority given to households with children, the elderly, and people with disabilities</li>
+                            <li>Parcels can be collected or, in special cases, delivered</li>
+                        </ul>
+                        <p>To register a household or enquire about eligibility, please use our <a href="enquiry.html">enquiry form</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item service-item" data-category="workshops">
+                <button class="accordion-btn">Skills & Life Workshops</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Beyond food, we believe in empowerment. Our free workshops help community members gain practical skills that improve daily life and future opportunities.</p>
+                        <h3>Current Workshop Themes</h3>
+                        <ul>
+                            <li>Basic cooking and nutrition on a budget</li>
+                            <li>Household budgeting and financial literacy</li>
+                            <li>CV writing and job-search skills</li>
+                            <li>Introduction to digital literacy and online safety</li>
+                            <li>Parenting support and child nutrition</li>
+                        </ul>
+                        <p>Workshops run in small groups. Spaces are limited — register your interest via the <a href="enquiry.html">enquiry form</a>.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Workshops -->
-        <section id="workshops" class="service">
-            <h2>Skills & Life Workshops</h2>
-            <p>Beyond food, we believe in empowerment. Our free workshops help community members gain practical skills that improve daily life and future opportunities.</p>
-            <h3>Current Workshop Themes</h3>
-            <ul>
-                <li>Basic cooking and nutrition on a budget</li>
-                <li>Household budgeting and financial literacy</li>
-                <li>CV writing and job-search skills</li>
-                <li>Introduction to digital literacy and online safety</li>
-                <li>Parenting support and child nutrition</li>
-            </ul>
-            <p>Workshops run in small groups and are facilitated by volunteers and partner organisations. Spaces are limited — register your interest via the <a href="enquiry.html">enquiry form</a>.</p>
-        </section>
-
-        <!-- How to Access -->
         <section class="access">
             <h2>How to Access Our Services</h2>
-            <p>All services are free. Simply visit one of our hubs during operating hours or complete the enquiry form. Our team will guide you through the next steps with dignity and respect.</p>
+            <p>All services are free. Simply visit one of our hubs during operating hours or complete the enquiry form.</p>
             <a href="enquiry.html" class="btn primary">Make an Enquiry</a>
         </section>
     </main>
@@ -90,5 +115,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

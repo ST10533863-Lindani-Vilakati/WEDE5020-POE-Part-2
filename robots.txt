@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ST10533863-Lindani-Vilakati.github.io/WEDE5020-POE-Part-2/hope-harvest/sitemap.xml
